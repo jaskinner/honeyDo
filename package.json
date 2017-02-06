@@ -1,0 +1,25 @@
+{
+  "name": "honeydo",
+  "version": "1.0.0",
+  "description": "Honey-do application for casual task-management. Edit",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jaskinner/honeyDo.git"
+  },
+  "author": "Jon Skinner",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jaskinner/honeyDo/issues"
+  },
+  "homepage": "https://github.com/jaskinner/honeyDo#readme",
+  "dependencies": {
+    "body-parser": "^1.16.0",
+    "ejs": "^2.5.5",
+    "express": "^4.14.1",
+    "mongojs": "^2.4.0"
+  }
+}
