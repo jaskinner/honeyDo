@@ -1,7 +1,7 @@
 {
   "name": "honeydo",
   "version": "1.0.0",
-  "description": "Honey-do application for casual task-management. Edit",
+  "description": "Honey-do application for casual task-management.",
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
