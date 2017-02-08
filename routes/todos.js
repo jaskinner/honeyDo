@@ -30,13 +30,13 @@ router.get('/todo/:id', function (req, res, next) {
 // Save todo
 router.post('/todo', function (req,res,next) {
     var todo = req.body;
-    if(!todo.text || (!todo.isCompleted + '')){
+    if(!todo.text || !(todo.isCompleted + '')){
         res.status(400);
         res.json({
             "error": "Invalid data"
         });
     } else {
-        db.save(todo, function (err, result) {
+        db.todos.save(todo, function (err, result) {
             if(err){
                 res.send(err);
             } else {
@@ -67,7 +67,7 @@ router.put('/todo/:id', function (req,res,next) {
     } else {
         db.todos.update({
             _id: mongojs.ObjectId(req.params.id)
-        }, updObj, {}, function (err,res) {
+        }, updObj, {}, function (err,result) {
             if(err){
                 res.send(err);
             } else {
